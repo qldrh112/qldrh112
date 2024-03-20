@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+* {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer {
+    /* 아래 고정 */
+    position: fixed;
+    bottom: 0;
+    /* 검은 배경 */
+    background-color: black;
+    /* 꽉 차게 */
+    width: 100%;
+    height: 50px;
+    /* 글자 흰색 */
+    color: white;
+    /* 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontpage {
+    height: 100px;
+    background-color: lightgrey;
+}
+
+.my-intro {
+    height: 100px;
+    /* background-color: lightgrey; */
+}
+
+.skills {
+    height: 100px;
+    background-color: lightgrey;
+}
+
+.project {
+    height: 100px;
+    /* background-color: lightgrey; */
+}
+
+.contact {
+    height: 100px;
+    margin-bottom: 50px;
+    background-color: lightgrey;
+}
+
+@media (max-width: 1000px) {
+    .article {
+        display: flex;
+    }
+
+    .frontpage, .my-intro {
+        width: 50%;
+    }
+
+    .skills {
+        width: 30%
+    }
+
+    .project {
+        width: 70%;
+    }
+
+}

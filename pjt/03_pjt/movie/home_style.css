@@ -1,0 +1,46 @@
+/* 배경이 검은색이니 글자는 하얀색 */
+.navbar-brand, .nav-link {
+    color: white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* 메뉴 열었을 때 오른쪽 정렬 */
+.collapse {
+    text-align: end;
+}
+
+/* 캐로셀 넓이 최대 */
+#carouselExampleAutoplaying {
+    width: 100%;
+}
+
+/* viewport에 따라서 너비 조절 */
+@media (max-width: 1399px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    header {
+        width: 1320px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+/* .card {
+    width: 25%;
+    height: 25%;
+} */

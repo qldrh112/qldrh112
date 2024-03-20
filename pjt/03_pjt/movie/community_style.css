@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .catalog {
+        display: none;
+    }
+
+}
+
+td {
+    width: 600px;
+}
