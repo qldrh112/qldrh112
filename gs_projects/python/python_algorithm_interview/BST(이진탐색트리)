@@ -1,0 +1,22 @@
+nums = [-10, -7, -3, 0, 5, 7, 9]
+tree = [0] + [0] * len(nums)
+N = len(nums)
+
+def sorted_array_to_bst(i, nums):
+    global cnt
+    cnt += 1
+    print(i)
+    if i >= len(tree):
+        return None
+
+    mid = len(nums)//2
+    tree[i] = nums[mid]
+
+    sorted_array_to_bst(2*i, nums[:mid])
+    sorted_array_to_bst(2*i+1, nums[mid+1:])
+
+    return tree
+
+cnt = 0
+print(sorted_array_to_bst(1, nums))
+print(cnt)

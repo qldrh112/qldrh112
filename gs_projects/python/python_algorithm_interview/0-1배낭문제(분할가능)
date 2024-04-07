@@ -1,0 +1,28 @@
+def fractional_knapsack(cargo):
+    capability = 15
+    value = 0
+
+    cargo = sorted(cargo, key=lambda x: x[0]/x[1], reverse=True)
+
+    for won, weight in cargo:
+        if capability >= weight:
+            value += won
+            capability -= weight
+        else:
+            value += capability * won / weight 
+            return value
+
+    return value 
+
+
+cargo = [
+    (4, 12),
+    (2, 1),
+    (10, 4),
+    (1, 1),
+    (2, 2),
+]
+
+
+r = fractional_knapsack(cargo)
+print(r)

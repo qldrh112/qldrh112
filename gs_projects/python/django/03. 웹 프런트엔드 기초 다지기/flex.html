@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 50vh;
+            margin: 0 auto;
+            display: flex;
+            /* 지정한 container보다 items가 더 커질 때 줄을 바꾸거나 밀어내는 것 */
+            flex-wrap: wrap;
+
+            /* row, column, row-reverse, column-reverse  */
+            flex-direction: row;
+            
+            /* 메인축을 기준으로 item을 정렬 */
+            /* start, end */
+            justify-content: center;
+
+            /* items가 한 줄일 때, 교차축을 기준으로 정렬한다. */
+            justify-items: center;
+            
+            /* items가 여러 줄일 때 flex-container를 정렬한다. */
+            align-content: center;
+            gap: 20px;
+        }
+
+        /* shrink, grow */
+
+        .container > div {
+            /* flex-item */
+            width: 100px;
+            height: 100px;
+            background-color: firebrick;
+            border: 1px solid black;
+        }
+
+        /* n번째 자식 */
+        .container > div:nth-child(1) {
+            flex-basis: 200px;
+        }
+
+        /* n번째 자식 */
+        .container > div:nth-child(2) {
+            flex-basis: 100px;
+        }
+
+        /* n번째 자식 */
+        .container > div:nth-child(3) {
+            flex-basis: 50px;
+        }
+
+        /* n번째 자식 */
+        .container > div:nth-child(4) {
+            flex-basis: 25px;
+        }
+
+
+        /* n번째 자식 */
+        .container > div:nth-child(5) {
+            flex-basis: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FlexBox 연습</h1>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>
